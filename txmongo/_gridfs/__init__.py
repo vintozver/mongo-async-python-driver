@@ -19,7 +19,6 @@ The :mod:`gridfs` package is an implementation of GridFS on top of
 
 .. mongodoc:: gridfs
 """
-from twisted.python import log
 from twisted.internet import defer
 from txmongo._gridfs.errors import (NoFile,
                                     UnsupportedAPI)
@@ -196,3 +195,8 @@ class GridFS(object):
         """
         raise UnsupportedAPI("The remove method is no longer supported. "
                              "Please use the delete method instead.")
+
+__all__ = [
+	'GridFS',
+]
+

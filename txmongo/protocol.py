@@ -14,8 +14,7 @@
 # limitations under the License.
 
 import struct
-from txmongo._pymongo import bson
-from txmongo.database import Database
+import bson
 from twisted.internet import defer, protocol
 
 _ONE = "\x01\x00\x00\x00"

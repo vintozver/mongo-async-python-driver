@@ -15,10 +15,10 @@
 
 import types
 from txmongo import filter as qf
-from txmongo._pymongo import errors
-from txmongo._pymongo.son import SON
-from txmongo._pymongo.code import Code
-from txmongo._pymongo.objectid import ObjectId
+from pymongo import errors
+from pymongo.son import SON
+from pymongo.code import Code
+from pymongo.objectid import ObjectId
 from twisted.internet.defer import Deferred
 
 
@@ -153,8 +153,7 @@ class Collection(object):
             return result.get('md5')
 
         if not isinstance(spec, ObjectId):
-            raise ValueError(_("filemd5 expected an objectid for its "
-                               "on-keyword argument"))
+            raise ValueError("filemd5 expected an objectid for its on-keyword argument")
 
         spec = SON([("filemd5", spec),
                     ("root", self._collection_name)])

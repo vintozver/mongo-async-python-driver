@@ -20,7 +20,7 @@ from txmongo import database
 from txmongo import collection
 from txmongo import gridfs
 from txmongo import filter as qf
-from txmongo._pymongo import objectid, timestamp
+from pymongo import objectid, timestamp
 from txmongo._gridfs import GridIn
 from twisted.trial import unittest
 from twisted.trial import runner

@@ -14,7 +14,7 @@
 # limitations under the License.
 
 from twisted.internet import defer
-from txmongo._pymongo.son import SON
+from pymongo.son import SON
 from txmongo.collection import Collection
 
 
