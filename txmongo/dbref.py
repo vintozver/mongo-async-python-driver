@@ -16,7 +16,7 @@
 
 import types
 
-from pymongo.son import SON
+from bson.son import SON
 from txmongo.collection import Collection
 
 

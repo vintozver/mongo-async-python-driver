@@ -15,10 +15,10 @@
 
 import types
 from txmongo import filter as qf
-from pymongo import errors
-from pymongo.son import SON
-from pymongo.code import Code
-from pymongo.objectid import ObjectId
+from bson import errors
+from bson.son import SON
+from bson.code import Code
+from bson.objectid import ObjectId
 from twisted.internet.defer import Deferred
 
 

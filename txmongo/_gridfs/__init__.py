@@ -37,7 +37,7 @@ class GridFS(object):
         """Create a new instance of :class:`GridFS`.
 
         Raises :class:`TypeError` if `database` is not an instance of
-        :class:`~pymongo.database.Database`.
+        :class:`~txmongo.database.Database`.
 
         :Parameters:
           - `database`: database to use
